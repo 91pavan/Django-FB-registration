@@ -1,0 +1,14 @@
+Facebook registration plugin successfully implemented in django.
+
+
+Easy to use .
+
+Run setup.py and import the django project. Python 2.7+ is required .
+Runs on django 1.4 
+
+NOTE:
+1.sample.html contains the plugin code.
+2.Database used is mysql. (You can change it to either postgres or sqlite).
+3.App name is reg.
+
+Feel free to play around.
