@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-     ('Pavan', 'pavan@the-company.in'),
+     ('Pavan', 'pavan0591@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -12,9 +12,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'fbreg',                      # Or path to database file if using sqlite3.
-        'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
+        'NAME': 'mysql_database',                      # Or path to database file if using sqlite3.
+        'USER': 'mysql_username',                      # Not used with sqlite3.
+        'PASSWORD': 'mysql_password',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -81,7 +81,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '7j)t)azrz%a3skec9--3cgg&amp;yjr+x04*u#%9b$wl5)*nbc8&amp;wz'
+SECRET_KEY = 'SOME_KEY'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
