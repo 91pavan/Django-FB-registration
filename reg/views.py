@@ -11,7 +11,7 @@ import base64
 import hashlib
 import logging
 from django.views.decorators.csrf import csrf_exempt
-FACEBOOK_CONNECT_SECRET='6a5931d62ba6d957afe9ee55d7d3a102'
+FACEBOOK_CONNECT_SECRET='YOUR_SECRET_KEY'
 
 def registration(request):
     return render_to_response('sample.html')
@@ -73,7 +73,7 @@ def fb_registration(request):
 
             # user does not exist. We create an account
             # in this example I assume that he will login via Facebook button or RPXnow
-            # so no password is needed for him - using random password to make Django happy
+            # so no password is needed for him - using random password
             randompass = ''.join([choice('1234567890qwertyuiopasdfghjklzxcvbnm') for i in range(7)])
             user = User.objects.create_user(data['registration']['name'], data['registration']['email'], randompass)
             user.save()
